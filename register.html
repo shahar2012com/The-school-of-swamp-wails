@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>הרשמה</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ראשי</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="login.html">התחברות</a></li>
+                <li><a href="register.html">הרשמה</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙/☀️</button>
+    </header>
+
+    <main><form class="auth-form" id="register-form">
+    <label for="new-username">שם משתמש:</label>
+    <input type="text" id="new-username" required autocomplete="off">
+
+    <label for="new-password">סיסמה:</label>
+    <input type="password" id="new-password" required autocomplete="off">
+
+    <label for="register-code">קוד הרשמה:</label>
+    <input type="text" id="register-code" required autocomplete="off">
+
+  <label for="profile-picture">תמונת פרופיל (אופציונלי):</label>
+    <input type="file" id="profile-picture" accept="image/*">
+
+
+    <p id="error-message" style="color: red; display: none;">קוד הרשמה שגוי!</p>
+
+    <button type="submit">הרשם</button>
+</form>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

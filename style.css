@@ -1,0 +1,260 @@
+/* עיצוב כללי */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+    background: linear-gradient(180deg, #80cbc4, #004d40);
+    color: white;
+}
+
+/* מצב כהה */
+.dark-mode {
+    background: linear-gradient(180deg, #121212, #004d40);
+    color: white;
+}
+
+/* עיצוב ראשי */
+header {
+    background: rgba(0, 77, 64, 0.9);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* ניווט */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+/* עיצוב עיגול המשתמש */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    display: none; /* מוסתר אם אין משתמש מחובר */
+}
+
+/* תפריט משתמש */
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    min-width: 120px;
+}
+
+.dropdown.open {
+    display: block;
+}
+
+.dropdown p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    min-width: 120px;
+}
+
+.dropdown.open {
+    display: block;
+}
+
+.dropdown p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* כפתור מצב כהה */
+#theme-toggle {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #388E3C;
+    color: white;
+    font-size: 1em;
+}
+
+/* טפסי הרשמה והתחברות */
+.auth-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2E7D32;
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+.book-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-cover {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+.book-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-cover {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.book-title:hover {
+    text-decoration: underline;
+}
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    overflow: hidden; /* מבטיח שהתמונה לא תחרוג */
+    background-position: center;
+}
+
